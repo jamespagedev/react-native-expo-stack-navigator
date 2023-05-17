@@ -19,6 +19,15 @@ export default function Page() {
         >
           Open Sean Profile
         </Link>
+        <Link
+          href={{
+            pathname: "/tomt",
+            params: { firstname: "Tom", lastname: "Tillinghast" },
+          }}
+          style={styles.link}
+        >
+          Open Tom Username
+        </Link>
       </View>
     </View>
   );
