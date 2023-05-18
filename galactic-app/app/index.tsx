@@ -8,7 +8,7 @@ import { globalStyles } from "./styles";
 export default function LoginPage(): JSX.Element {
   return (
     <View style={globalStyles.container}>
-      <Link href={"/register"}>
+      <Link href={"/register"} asChild>
         <Pressable>
           <Text>Create Account</Text>
         </Pressable>
