@@ -28,6 +28,17 @@ yarn web
 npx create-react-native-app -t with-router
 ```
 
+```
+npx create-expo-app galactic-app --example with-router
+cd galactic-app
+touch tsconfig.json
+npx expo
+
+cd %userProfile%\AppData\Local\Android\sdk\emulator
+emulator -list-avds
+emulator -avd Virtual_Pixel_3_API_27
+```
+
 user snippets
 "React Native Functional Component": {
 "prefix": "rnfc",
