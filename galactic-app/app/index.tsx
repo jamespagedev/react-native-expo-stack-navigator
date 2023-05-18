@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Pressable, Text, View } from "react-native";
+import { Link } from "expo-router";
 import { globalStyles } from "./styles";
 
 // interface Props {}
@@ -7,7 +8,11 @@ import { globalStyles } from "./styles";
 export default function LoginPage(): JSX.Element {
   return (
     <View style={globalStyles.container}>
-      <Text>LoginPage</Text>
+      <Link href={"/register"}>
+        <Pressable>
+          <Text>Create Account</Text>
+        </Pressable>
+      </Link>
     </View>
   );
 }
