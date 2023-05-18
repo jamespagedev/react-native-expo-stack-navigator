@@ -37,6 +37,9 @@ npx expo
 cd %userProfile%\AppData\Local\Android\sdk\emulator
 emulator -list-avds
 emulator -avd Virtual_Pixel_3_API_27
+
+cd %userProfile%\AppData\Local\Android\sdk\platform-tools
+npx uri-scheme open exp://localhost:19000/--/list/9000 --android
 ```
 
 user snippets
