@@ -16,6 +16,11 @@ export default function StackLayout(): JSX.Element {
           fontWeight: "bold",
         },
       }}
-    />
+    >
+      <Stack.Screen
+        name="index"
+        options={{ headerTitle: "Login", headerShown: false }}
+      />
+    </Stack>
   );
 }
