@@ -74,7 +74,7 @@ emulator -avd <device_name>
   - (note: similator must be running for this to work)
 - to load the app into your web browser, type `w`
 
-# (Optional): Deep linking with news-app
+# (Optional): Deep linking with galactic-app
 
 - load app in android similator
 - navigate to any news id screen
@@ -103,7 +103,7 @@ npx expo
 ## Create project with expo and react-navigation
 
 ```
-npx create-expo-app <app name> --example expo-template-blank-typescript
+npx create-expo-app <app name> -t expo-template-blank-typescript
 cd <app name>
 yarn add axios @react-navigation/native @react-navigation/native-stack
 npx expo install expo-router expo-constants expo-linking expo-splash-screen expo-status-bar
@@ -187,11 +187,11 @@ yarn add @react-navigation/web
   },
   "Console Log": {
     "prefix": "conl",
-    "body": "console.log('${message}')"
+    "body": "console.log('${message}');"
   },
   "Console Log Variable": {
     "prefix": "conlv",
-    "body": "console.log('${value}:', ${value})"
+    "body": "console.log('${value}:', ${value});"
   }
 ```
 
@@ -258,10 +258,16 @@ yarn add @react-navigation/web
   },
   "Console Log": {
     "prefix": "conl",
-    "body": "console.log('$1')"
+    "body": "console.log('$1');"
   },
   "Console Log Variable": {
     "prefix": "conlv",
-    "body": "console.log('${value}:', ${value})"
+    "body": "console.log('${value}:', ${value});"
   }
 ```
+
+# Acknowledgements
+
+- Simon Grimm
+  - https://www.youtube.com/watch?v=RglRiycD0oQ
+  - https://www.youtube.com/watch?v=9vydY9SDtAo
